@@ -25,6 +25,13 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        System.out.println("Ввести с клавиатуры отдельно Имя, число1, число2.");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();
+        int number1 = Integer.parseInt(br.readLine());
+        int number2 = Integer.parseInt(br.readLine());
+
+        System.out.printf("%s получает %d через %d лет.", name, number1, number2);
 
     }
 }

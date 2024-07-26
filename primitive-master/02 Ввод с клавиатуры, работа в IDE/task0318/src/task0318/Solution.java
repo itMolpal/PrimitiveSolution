@@ -27,5 +27,9 @@ import java.io.*;
 public class Solution {
     public static void main(String[] args) throws Exception {
         // Напишите ваш код здесь
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();
+        int years = Integer.parseInt(br.readLine());
+        System.out.printf ("%s захватит мир через %d лет. Му-ха-ха!", name, years);
     }
 }
