@@ -45,13 +45,10 @@ public class Solution {
         double minute = Double.parseDouble(br.readLine());
         if (minute > 5)
             minute = minute % 5;
-
         if (minute >= 0 && minute < 3)
             System.out.println("зелёный");
-
-        if (3 <= minute && minute < 4)
+        if (minute >= 3 && minute < 4)
             System.out.println("жёлтый");
-
         if (minute >= 4 && minute <= 5)
             System.out.println("красный");
 

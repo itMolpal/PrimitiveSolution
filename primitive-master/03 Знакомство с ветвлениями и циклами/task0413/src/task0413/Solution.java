@@ -29,29 +29,14 @@ public class Solution {
         int dayOfWeek = Integer.parseInt(br.readLine());
 
         switch (dayOfWeek) {
-            case 1:
-                System.out.println("понедельник");
-                break;
-            case 2:
-                System.out.println("вторник");
-                break;
-            case 3:
-                System.out.println("среда");
-                break;
-            case 4:
-                System.out.println("четверг");
-                break;
-            case 5:
-                System.out.println("пятница");
-                break;
-            case 6:
-                System.out.println("суббота");
-                break;
-            case 7:
-                System.out.println("воскресенье");
-                break;
-            default:
-                System.out.println("Такого дня недели не существует");
+            case 1 -> System.out.println("понедельник");
+            case 2 -> System.out.println("вторник");
+            case 3 -> System.out.println("среда");
+            case 4 -> System.out.println("четверг");
+            case 5 -> System.out.println("пятница");
+            case 6 -> System.out.println("суббота");
+            case 7 -> System.out.println("воскресенье");
+            default ->System.out.println("Такого дня недели не существует");
 
 
         }

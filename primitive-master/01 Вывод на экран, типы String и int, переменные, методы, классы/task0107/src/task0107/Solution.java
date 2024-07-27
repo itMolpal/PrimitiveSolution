@@ -13,18 +13,22 @@ Requirements:
 5. Нужно раскомментировать одну строку и не менять остальные.
 */
 
+import java.io.BufferedReader;
+
 public class Solution {
     public static void main(String[] args) {
-        int x = 2;
-        int y = 12;
-
-        // y = x * y;
-         y = x + y;
-
-        x = y - x;
-        y = y - x;
-
-        System.out.println(x);
-        System.out.println(y);
+//        int x = 2;
+//        int y = 12;
+//
+//        // y = x * y;
+//         y = x + y;
+//
+//        x = y - x;
+//        y = y - x;
+//
+//        System.out.println(x);
+//        System.out.println(y);
+            int x = 11;
+           System.out.println(x> 2 & x < 5);
     }
 }

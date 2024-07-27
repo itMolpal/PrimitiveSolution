@@ -30,8 +30,9 @@ public class Solution {
     public static void checkInterval(int number) {
         //напишите тут ваш код
         if (number > 50 && number < 100)
-            System.out.printf("Число %d содержится в интервале.\n", number);
+            System.out.printf("Число %d  содержится в интервале.\n", number);
         else
             System.out.printf("Число %d не содержится в интервале.\n", number);
     }
 }
+
