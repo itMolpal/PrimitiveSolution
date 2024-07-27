@@ -35,6 +35,25 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        System.out.println("Введите 3 числа. Каждое с новой строки");
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int numder1 = Integer.parseInt(br.readLine());
+        int numder2 = Integer.parseInt(br.readLine());
+        int numder3 = Integer.parseInt(br.readLine());
+
+        if (numder1 == numder2 && numder2 == numder3) {
+            System.out.println(numder1 + " " + numder2 + " " + numder3);
+        }
+        else if (numder1 == numder2)
+            System.out.println(numder1 + " " + numder2);
+
+        else if (numder1 == numder3)
+            System.out.println(numder1 + " " + numder3);
+
+        else if (numder2 == numder3)
+            System.out.println(numder2 + " " + numder3);
+
 
     }
 }

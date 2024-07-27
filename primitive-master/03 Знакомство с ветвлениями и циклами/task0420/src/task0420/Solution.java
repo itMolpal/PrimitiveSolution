@@ -2,6 +2,11 @@ package task0420;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Stream;
 
 /* 
 Сортировка трех чисел
@@ -19,6 +24,14 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        ArrayList <Integer> allnumbers = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            allnumbers.add(Integer.parseInt(br.readLine()));
+        }
+
+        allnumbers.sort(Collections.reverseOrder());
+        allnumbers.forEach(i -> System.out.print(i + " "));
     }
 }

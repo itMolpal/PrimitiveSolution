@@ -41,6 +41,20 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        double minute = Double.parseDouble(br.readLine());
+        if (minute > 5)
+            minute = minute % 5;
+
+        if (minute >= 0 && minute < 3)
+            System.out.println("зелёный");
+
+        if (3 <= minute && minute < 4)
+            System.out.println("жёлтый");
+
+        if (minute >= 4 && minute <= 5)
+            System.out.println("красный");
 
     }
 }
+

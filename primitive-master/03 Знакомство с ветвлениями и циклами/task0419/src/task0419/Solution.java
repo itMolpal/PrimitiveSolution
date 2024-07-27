@@ -2,6 +2,9 @@ package task0419;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /* 
 Максимум четырех чисел
@@ -18,6 +21,13 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        List <Integer> list1 = new ArrayList<Integer>();
+        for (int i = 0; i < 4; i++) {
+        list1.add(Integer.parseInt(br.readLine()));}
+
+        System.out.println(Collections.max(list1));
 
     }
 }

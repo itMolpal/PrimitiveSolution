@@ -2,6 +2,8 @@ package task0424;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 /* 
 Три числа
@@ -24,6 +26,27 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int[] numbers = new int[3];
+        int index1 = numbers[0] = 1;
+        int index2 = numbers[1] = 2;
+        int index3 = numbers[2] = 3;
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = Integer.parseInt(br.readLine());
+        }
+
+        if (numbers[0] != numbers[1] && numbers[1] == numbers[2])
+            System.out.println(index1);
+
+        else if (numbers[0] == numbers[2] && numbers[0] != numbers[1])
+            System.out.println(index2);
+
+       else if (numbers[0] == numbers[1] && numbers[1] != numbers[2])
+            System.out.println(index3);
+
+
 
     }
+
 }
