@@ -25,8 +25,8 @@ public class Solution {
 
         List <Integer> list1 = new ArrayList<Integer>();
         for (int i = 0; i < 4; i++) {
-        list1.add(Integer.parseInt(br.readLine()));}
 
+        list1.add(Integer.parseInt(br.readLine()));}
         System.out.println(Collections.max(list1));
 
     }

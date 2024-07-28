@@ -1,9 +1,8 @@
 package task0424;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.stream.Stream;
 
 /* 
 Три числа
@@ -25,7 +24,8 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        numberOfAnother(Integer.parseInt(br.readLine()), Integer.parseInt(br.readLine()), Integer.parseInt(br.readLine()));        //напишите тут ваш код
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] numbers = new int[3];
         int index1 = numbers[0] = 1;
@@ -42,11 +42,29 @@ public class Solution {
         else if (numbers[0] == numbers[2] && numbers[0] != numbers[1])
             System.out.println(index2);
 
-       else if (numbers[0] == numbers[1] && numbers[1] != numbers[2])
+        else if (numbers[0] == numbers[1] && numbers[1] != numbers[2])
             System.out.println(index3);
 
-
-
     }
+
+//    static void numberOfAnother(int index1, int index2, int index3) throws IOException {
+//        int[] numbers = new int[3];
+//        numbers[0] = index1;
+//        numbers[1] = index2;
+//        numbers[2] = index3;
+//
+//        int index;
+//
+//        if (numbers[0] != numbers[1] && numbers[1] == numbers[2]) {
+//            index = 1;
+//            System.out.println(index);
+//        } else if (numbers[0] == numbers[2] && numbers[0] != numbers[1]) {
+//            index = 2;
+//            System.out.println(index);
+//        } else if (numbers[0] == numbers[1] && numbers[1] != numbers[2]) {
+//            index = 3;
+//            System.out.println(index);
+//        }
+//    }
 
 }

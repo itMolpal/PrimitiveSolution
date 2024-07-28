@@ -32,25 +32,20 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int number = Integer.parseInt(br.readLine());
+        String answer;
 
-        if (number % 2 == 0 && number < 0) {
-            System.out.println("отрицательное четное число");
+        if  (number < 0) {
+           answer = (number % 2 == 0 ) ? "отрицательное четное число" : "отрицательное нечетное число";
+                System.out.println(answer);
         }
-        else if (number % 2 != 0 && number < 0) {
-            System.out.println("отрицательное нечетное число");
+        else if (number > 0) {
+             answer = (number % 2 == 0 ) ? "положительное четное число" : "положительное нечетное число";
+             System.out.println(answer);
         }
-        else if (number % 2 == 0 && number > 0) {
-            System.out.println("положительное четное число");
-        }
-        else if (number % 2 != 0 && number > 0) {
-            System.out.println("положительное нечетное число");
-        }
-        else if (number == 0) {
+        else  {
             System.out.println("ноль");
         }
-
     }
 }

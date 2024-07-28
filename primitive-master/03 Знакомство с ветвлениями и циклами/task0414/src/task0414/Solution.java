@@ -31,7 +31,6 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
         int bissextile = 366;
         int noBissextile = 365;
 
